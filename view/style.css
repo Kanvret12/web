@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: sans-serif;
+    background-color: #141414;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+}
+nav .logo {
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    letter-spacing: 10px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 20%;
+    margin-right: 10%;
+    justify-content: space-between;
+    
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: indigo;
+
+}
+/*HAMBURGER MENU*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input {
+    position: absolute;
+    width: 38px;
+    height: 29px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: printer;
+    z-index: 2;
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+
+/*HAMBURGER MENU ANIMATION*/
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg)translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg)translate(1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+/* STYLE HOME */
+.border {
+    height: 80vh;
+    border-radius: 15px;
+    width: 900px;
+    background-color: rgb(0, 0, 0);
+    margin-top: -600px;
+    margin-left: 300px;
+}
+.home {
+    position: relative;
+    left: 250px;
+    top: 20px;
+    
+}
+.home .home1 {
+    margin-left: -175px;
+    color: yellow;
+    
+}
+.home .date {
+    margin-top: -27px;
+    margin-left: 200px;
+    color: rgb(91, 0, 177);
+    
+}
+.border .jam1 .jam {
+    margin-top: 90px;
+    margin-left: 350px;
+    height: -20vh;
+    width: 270px;
+    border-radius: 10px;
+    background-color: rgb(9, 0, 88);
+    color: white;
+    
+}
+.visitor1 {
+    margin-top: -160px;
+    margin-left: 700px;
+}
+.website-counter {
+    font-size: 40px;
+    margin-top: 90px;
+    margin-left: 720px;
+    width: 270px;
+    color: white;
+}
+.visitor {
+    margin-top: -150px;
+    color: rgb(60, 255, 0);
+}
+.ipc {
+    position: absolute;
+    left : 350px;
+    top: 200px;
+    box-shadow: 0 10px 5px 0 rgb(1, 10, 90);
+    border-radius: 10px;
+}
+.ipc .findipurl {
+    box-shadow: 0 4px 8px 0 rgb(0, 26, 255);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+/* STYLE API */
+section li .btn {
+    font-size: 15px;
+    margin: 2px;
+    border-radius: 3px;
+    background-color: rgb(126, 0, 230);
+    cursor: pointer;
+    color: white;
+}
+section li .btn:hover {
+    border-radius: 3px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    text-shadow: 0 0 2px red;
+    cursor: pointer;
+    color: black;
+}
+.con {
+    border: 1px solid red;
+    background-image: linear-gradient(180deg, rgb(19, 0, 54), rgb(194, 194, 0));
+    padding:5px;
+    margin-top:5px;
+    width:200px;
+    height:650px;
+    overflow-y:scroll;
+    text-align: left;
+    top:0;
+    display: block;
+    margin-top: 3%;
+    list-style: none;
+}
+.heading {
+    text-shadow: 0 0 2px red;
+    line-height:70px;
+}
+
+/* RESPONSIVE TABLET */
+
+@media screen and (max-width: 1068px) {
+    .contact {
+        margin-top: 7%;
+        list-style: none;
+    }
+    nav ul {
+        width: 50%;
+    }
+}
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 576px) {
+    .contact {
+        margin-top: 8%;
+        list-style: none;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        width: 50%;
+        top: 0;
+        height: 80vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
