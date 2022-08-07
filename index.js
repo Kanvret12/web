@@ -1,16 +1,16 @@
 const express = require('express'); 
 const app = express();
-var favicon = require('serve-favicon')
-var path = require('path')
+var favicon = require('serve-favicon');
+var path = require('path');
 var cookieParser = require('cookie-parser');
-var createError = require('http-errors')
-require('./settings')
+var createError = require('http-errors');
+require('./settings');
 
 
 cors = require('cors'),
 
 
-    secure = require('ssl-express-www');
+secure = require('ssl-express-www');
 const PORT = process.env.PORT || 8080 || 5000 || 3000
 
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')))
