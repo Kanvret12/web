@@ -1,38 +1,208 @@
-<!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>API shield</title> 
-        <meta property="og:image" content="https://telegra.ph/file/02b3794db6d81e1ccf3c9.jpg">
-        <link rel="shortcut icon" href="https://telegra.ph/file/02b3794db6d81e1ccf3c9.jpg"/>  
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <div class="logo">
-                <h4>Shield API</h4>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Boxiocns CDN Link -->
+    <meta property="og:image" content="https://telegra.ph/file/02b3794db6d81e1ccf3c9.jpg">
+    <link rel="shortcut icon" href="https://telegra.ph/file/02b3794db6d81e1ccf3c9.jpg"/>  
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bx-chevron-right-square'></i>
+      <span class="logo_name">ShielD-Api</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Category</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-search-alt-2' ></i>
+            <span class="link_name">Search</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Search</a></li>
+          <li><a href="api/search/ytplay?text=lagu%dj">Yt Play</a></li>
+          <li><a href="api/search/linkgroupwa?text=belajar"">Group WA</a></li>
+          <li><a href="api/search/pinterest?text=al-quran">Pinterest</a></li>
+          <li><a href="api/search/ringtone?text=samsung">Ringtone</a></li>
+          <li><a href="api/search/wikimedia?text=Malaysia">Wikimedia</a></li>
+          <li><a href="api/search/google?text=Mobile%20Legends">Google</a></li>
+          <li><a href="api/search/googleimage?text=Mobile%20Legends">Google Image</a></li>
+          <li><a href="api/search/wallpaper?text=Mobile%20Legends">Wallpaper</a></li>
+          <li><a href="api/search/sticker?text=fun">Sticker</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-download' ></i>
+            <span class="link_name">Downloader</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Downloader</a></li>
+          <li><a href="api/dowloader/fbdown?url=https://www.facebook.com/UstazAzharIdrusFansClub/videos/813224618838631">Facebook</a></li>
+          <li><a href="api/dowloader/twitter?url=https://twitter.com/faqeeyaaz/status/1242789155173617664?s=20&t=DRgdl9U8MwTwpY0o1o-96g">Twitter</a></li>
+          <li><a href="api/dowloader/tikok?url=https://vt.tiktok.com/ZSdqSfBxG/?k=1">Tiktok Mp4 Mp3</a></li>
+          <li><a href="api/dowloader/yt?url=https://youtu.be/3hXbjp-FcTc">Youtube Mp4 Mp3</a></li>
+          <li><a href="api/dowloader/soundcloud?url=https://soundcloud.com/ndaa-212683099/dj-coba-kau-ingat-ingat-kembali-seharusnya-aku-jungle-dutch-terbaru-2021-full-bass-viral-tik?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Sound Cloud</a></li>
+          <li><a href="api/dowloader/telesticker?url=https://t.me/addstickers/Shitsshitsshitsshists">Tele Sticker</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-pencil'></i>
+            <span class="link_name">Text Pro</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Text Pro</a></li>
+          <li><a href="api/textpro/pencil?text=Shield">Pencils</a></li>
+          <li><a href="api/textpro/glitch?text=Shield">Glitch</a></li>
+          <li><a href="api/textpro/berry?text=Shield">Berry</a></li>
+          <li><a href="api/textpro/blackpink?text=Shield">Black pink</a></li>
+          <li><a href="api/textpro/neon?text=Shield">Neon</a></li>
+          <li><a href="api/textpro/logobear?text=Shield">Logo Bear</a></li>
+          <li><a href="api/textpro/3dchristmas?text=Shield">3D Chrstmas</a></li>
+          <li><a href="api/textpro/thunder?text=Shield">thunder</a></li>
+          <li><a href="api/textpro/3dboxtext?text=Shield">3D Box</a></li>
+          <li><a href="api/textpro/glitch2?text=Shield&text2=pro">Glitch2</a></li>
+          <li><a href="api/textpro/glitchtiktok?text=Shield&text2=pro">Glitch Tiktok</a></li>
+          <li><a href="api/textpro/video-game-classic?text=Shield&text2=pro">Video Game Classic</a></li>
+          <li><a href="api/textpro/marvel-studios?text=Shield&text2=pro">Marvel Studios</a></li>
+          <li><a href="api/textpro/ninja-logo?text=Shield&text2=pro">Ninja Logo</a></li>
+          <li><a href="api/textpro/transformer?text=Shield">Transfrmer</a></li>
+          <li><a href="api/textpro/green-horror?text=Shield">Green Horrorer</a></li>
+          <li><a href="api/textpro/magma?text=Shield">Magma</a></li>
+          <li><a href="api/textpro/3d-neon-light?text=Shield">3d Neon Light</a></li>
+          <li><a href="api/textpro/3d-orange-juice?text=Shield">3d Orage Juice</a></li>
+          <li><a href="api/textpro/chocolate-cake?text=Shield">Chocolate Cake</a></li>
+          <li><a href="api/textpro/strawberry?text=Shield">Strawberry</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-photo-album' ></i>
+            <span class="link_name">Photooxy</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Photooxy</a></li>
+          <li><a href="api/photooxy/flaming?text=Shield">Flaming</a></li>
+          <li><a href="api/photooxy/shadow-sky?text=Shield">Shadow Sky</a></li>
+          <li><a href="api/photooxy/metallic?text=Shield">Metallic</a></li>
+          <li><a href="api/photooxy/naruto?text=Shield">Naruto</a></li>
+          <li><a href="api/photooxy/pubg?text=Pubg&text2=Shield">PUBG</a></li>
+          <li><a href="api/photooxy/under-grass?text=Shield">Under Grass</a></li>
+          <li><a href="api/photooxy/harry-potter?text=Shield">Harry Potter</a></li>
+          <li><a href="api/photooxy/flower-typography?text=Shield">Flower Typography</a></li>
+          <li><a href="api/photooxy/picture-of-love?text=Shield">Picture Of Love</a></li>
+          <li><a href="api/photooxy/coffee-cup?text=Shield">Coffee Cup</a></li>
+          <li><a href="api/photooxy/butterfly?text=Shield">Butterfly</a></li>
+          <li><a href="api/photooxy/night-sky?text=Shield">Night Sky</a></li>
+          <li><a href="api/photooxy/carved-wood?text=Shield">Carved Wood</a></li>
+          <li><a href="api/photooxy/illuminated-metallic?text=Shield">Illuminated Metallic</a></li>
+          <li><a href="api/photooxy/sweet-candy?text=Shield">Sweet Candy</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-images' ></i>
+            <span class="link_name">Images</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Images</a></li>
+          <li><a href="api/randomgambar/couplepp">Couple</a></li>
+          <li><a href="api/randomgambar/dadu">Dadu</a></li>
+          <li><a href="api/randomgambar/coffee">Coffee</a></li>
+          <li><a href="api/randomgambar/loli">loli</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="https://telegra.ph/file/4fd33cd204bb44a9f08c1.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">ShielD</div>
+        <div class="job">Rest-Api~</div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <div class="col-div-6">
+        <div class="profile">
+    
+            <img src="https://telegra.ph/file/02b3794db6d81e1ccf3c9.jpg" class="pro-img" />
+            <p>SHIELD.ID <span>KANVRET.ID</span></p>
+        </div>
+    </div>
+        <div class="clearfix"></div>
+    </div>
+    
+        <div class="clearfix"></div>
+        <br/>
+        
+        <div class="col-div-3">
+            <div class="box">
+                <p>67<br/><span>View</span></p>
+                <i class="fa fa-users box-icon"></i>
             </div>
-
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="/api" class="api">API</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">About</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>88<br/><span>Projects</span></p>
+                <i class="fa fa-list box-icon"></i>
             </div>
-        </nav>
-        <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/ruang-admin.min.js"></script>
-    <script src="js/menu.js"></script>
-    </body>
+        </div>
+        <div class="col-div-3">
+            <div class="box">
+                <p>78<br/><span>Aktive</span></p>
+                <i class="fa fa-tasks box-icon"></i>
+            </div>
+        </div>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
 </html>
