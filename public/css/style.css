@@ -10,7 +10,6 @@ html {
 body {
     font-family: sans-serif;
     background-image: url("https://telegra.ph/file/d9c27f09769e107d7beff.jpg");
-    opacity: 60;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -209,7 +208,6 @@ section li .btn:hover {
 @media screen and (max-width: 576px) {
   body {
     background-image: url("https://play-lh.googleusercontent.com/au8P9zpq2zsxfKAWILZ8fAfxQH534BSMkhrYEPC4oSODkU66AQ_qjz-JX1COEsObBQ=w800-h500-rw");
-    opacity: 100;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
