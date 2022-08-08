@@ -484,13 +484,13 @@ section li .btn:hover {
     display: none;
   }
   .sidebar{
-    width: 78px;
+    width: 260px;
   }
   .sidebar.close{
     width: 0;
   }
   .home-section{
-    left: 78px;
+    left: 260px;
     width: calc(100% - 78px);
     z-index: 100;
   }
@@ -566,7 +566,7 @@ section li .btn:hover {
 	padding:10px;
 }
 .box p{
-	 font-size: 35px;
+	 font-size: 270%;
     color: white;
     font-weight: bold;
     line-height: 30px;
@@ -575,7 +575,7 @@ section li .btn:hover {
     display: inline-block;
 }
 .box p span{
-	font-size: 20px;
+	font-size: 30%;
 	font-weight: 400;
 	color: #818181;
 }
